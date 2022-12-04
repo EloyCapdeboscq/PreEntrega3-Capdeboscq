@@ -1,0 +1,26 @@
+.titulo-ubi{
+    background-image: url(../assets/img/titulo-ubi.jpg);
+    height: 200px;
+    background-size: cover;
+    font-family: Lato solid;
+    font-size: 40px;
+    padding-top:120px;
+    padding-left: 180px;
+}
+
+.info-ubi{
+    margin: 100px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+}
+
+.mapa-ubi{
+    margin-left: 500px;
+    width: 2800px;
+}
+
+.texto-ubi{
+    margin-top: 140px;
+}
