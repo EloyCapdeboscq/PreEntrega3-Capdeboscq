@@ -34,3 +34,26 @@
     margin: 100px;
     width: 800px;
 }
+
+.bodyNosotros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px auto auto auto 60px;
+    grid-template-areas: "nav    nav    nav"
+                         "header header header"
+                         "main   main   main"
+                         "aside  aside  aside"
+                         "footer footer footer";
+}
+
+.headerNosotros{
+    grid-area: header;
+}
+
+.mainNosotros{
+    grid-area: main;
+}
+
+.asideNosotros{
+    grid-area: aside;
+}

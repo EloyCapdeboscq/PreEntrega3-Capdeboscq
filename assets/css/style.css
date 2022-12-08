@@ -18,14 +18,25 @@ body {
   grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
 }
 
+@media (max-width: 1280px) {
+  .BodyInicio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px auto 600px 600px 60px;
+    grid-template-areas: "nav    nav" "header header" "main   main" "main   main" "footer footer";
+  }
+}
 .headerInicio {
   grid-area: header;
 }
 
+.mainInicio {
+  grid-area: main;
+}
+
 .titulo-inicio {
-  background-image: url(../assets/img/header-inicio-min.jpg);
+  background-image: url(../img/header-inicio.jpg);
   width: 100%;
-  height: 580px;
+  height: 600px;
   background-size: cover;
   font-family: Lato solid;
   font-size: 40px;
@@ -33,10 +44,6 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-}
-
-.mainInicio {
-  grid-area: main;
 }
 
 nav {
@@ -130,10 +137,9 @@ footer ul {
   font-family: Lato;
   font-size: 16px;
   background-image: url(../img/fondo-form.jpg);
-  max-width: 1000px;
+  width: 920px;
   height: 660px;
   margin: 57px;
-  margin-left: 400px;
   color: rgba(92, 217, 248, 0.947);
   display: grid;
   flex-direction: column;
@@ -161,13 +167,17 @@ footer ul {
 }
 
 .titulo-ubi {
-  background-image: url(../assets/img/titulo-ubi.jpg);
-  height: 200px;
+  background-image: url(../img/header-ubi.jpg);
+  width: 100%;
+  height: 600px;
   background-size: cover;
   font-family: Lato solid;
-  font-size: 40px;
-  padding-top: 120px;
-  padding-left: 180px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 140PX;
+  color: white;
 }
 
 .info-ubi {
@@ -185,6 +195,21 @@ footer ul {
 
 .texto-ubi {
   margin-top: 140px;
+}
+
+.bodyUbicacion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto auto 60px;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
+}
+
+.headerUbicacion {
+  grid-area: header;
+}
+
+.mainUbicacion {
+  grid-area: main;
 }
 
 .productos {
@@ -208,6 +233,11 @@ footer ul {
   height: 200px;
   margin-top: 50px;
   margin-left: 50px;
+}
+
+.tarjeta__img:hover {
+  transform: translate(20px, 10px);
+  transition: 1s;
 }
 
 .titulo-productos {
@@ -282,4 +312,85 @@ footer ul {
 .img-proyecto {
   margin: 100px;
   width: 800px;
+}
+
+.bodyNosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px auto auto auto 60px;
+  grid-template-areas: "nav    nav    nav" "header header header" "main   main   main" "aside  aside  aside" "footer footer footer";
+}
+
+.headerNosotros {
+  grid-area: header;
+}
+
+.mainNosotros {
+  grid-area: main;
+}
+
+.asideNosotros {
+  grid-area: aside;
+}
+
+.header-contactos {
+  background-image: url(../img/header-contactos.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  font-family: Lato solid;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.bodyContactos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto auto 60px;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
+}
+
+.headerContactos {
+  grid-area: header;
+}
+
+.mainContactos {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+}
+
+.header-productos {
+  background-image: url(../img/header-productos.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  font-family: Lato solid;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: white;
+}
+
+.bodyProductos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto auto auto 60px;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "aside  aside  aside  aside" "footer footer footer footer";
+}
+
+.headerProductos {
+  grid-area: header;
+}
+
+.mainProductos {
+  grid-area: main;
+}
+
+.asideProductos {
+  grid-area: aside;
 }

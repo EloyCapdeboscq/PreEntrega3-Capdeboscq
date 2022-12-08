@@ -21,6 +21,11 @@
     margin-left: 50px;
 }
 
+.tarjeta__img:hover{
+    transform: translate(20px,10px);
+    transition: 1s;
+}
+
 .titulo-productos{
     margin: 15px;
     font-family: Lato; 
