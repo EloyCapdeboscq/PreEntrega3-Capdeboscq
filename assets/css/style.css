@@ -14,15 +14,26 @@ body {
 .BodyInicio {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80px auto auto 60px;
+  grid-template-rows: 80px auto auto auto;
   grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
 }
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .BodyInicio {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px auto 600px 600px 60px;
-    grid-template-areas: "nav    nav" "header header" "main   main" "main   main" "footer footer";
+    grid-template-rows: 80px auto auto auto auto;
+    grid-template-areas: "nav    nav" "header header" "main   main " " main   main" "footer footer";
+  }
+  .productos {
+    grid-area: main;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: baseline;
+    width: 100%;
+  }
+  .mainInicio {
+    width: 100%;
   }
 }
 .headerInicio {
@@ -200,7 +211,7 @@ footer ul {
 .bodyUbicacion {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80px auto auto 60px;
+  grid-template-rows: 80px auto auto auto;
   grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
 }
 
@@ -317,7 +328,7 @@ footer ul {
 .bodyNosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px auto auto auto 60px;
+  grid-template-rows: 80px auto auto auto auto;
   grid-template-areas: "nav    nav    nav" "header header header" "main   main   main" "aside  aside  aside" "footer footer footer";
 }
 
@@ -349,8 +360,11 @@ footer ul {
 .bodyContactos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80px auto auto 60px;
-  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "footer footer footer footer";
+  grid-template-rows: 80px auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" 
+                       "header header header header" 
+                       "main   main   main   main" 
+                       "footer footer footer footer";
 }
 
 .headerContactos {
@@ -379,7 +393,7 @@ footer ul {
 .bodyProductos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80px auto auto auto 60px;
+  grid-template-rows: 80px auto auto auto auto;
   grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "aside  aside  aside  aside" "footer footer footer footer";
 }
 
@@ -393,4 +407,20 @@ footer ul {
 
 .asideProductos {
   grid-area: aside;
+}
+
+@media screen and (max-width:850px){
+  nav{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    font-family: Lato;
+    color:rgb(92, 217, 248, 0.947);
+  }
 }
