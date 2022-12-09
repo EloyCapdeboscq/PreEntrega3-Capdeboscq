@@ -8,30 +8,6 @@
                          "footer footer footer footer";
 }
 
-@media screen (min-width:500px) and (max-width: 1280px){
-    .BodyInicio{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 80px auto auto auto 60px;
-        grid-template-areas: "nav    nav"
-                             "header header"
-                             "main   main "
-                             " main   main"
-                             "footer footer";
-    }
-    .productos{
-        grid-area: main;
-        margin: 0%;
-        padding: 0%;
-        display: flex;
-        justify-content: baseline;
-        width: 100%;
-    }
-    .mainInicio{
-        width: 100%;
-    }
-    
-}
-
 .headerInicio{
     grid-area: header;
 }
